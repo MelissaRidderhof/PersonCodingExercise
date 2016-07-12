@@ -1,0 +1,7 @@
+﻿<div ng-controller="PersonListController">
+    <div ng-repeat="person in people" ng-click="showOrders(person.id);">
+        {{person.title}} {{person.firstName}} {{person.lastName}}, aged  {{person.age}}
+    </div>
+    
+    <button ng-click="add()"> ADD NEW PERSON </button>
+</div>
